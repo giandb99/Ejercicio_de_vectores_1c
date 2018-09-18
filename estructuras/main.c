@@ -5,11 +5,39 @@
 
 int main()
 {
-    eAlumno listadoMain[A];
+    eAlumno listado[A];
 
-    cargarListadoDeAlumnos(listadoMain,A);
-    mostrarListadoDeAlumnos(listadoMain,A);
-    ordenarPorNombre(listadoMain,A);
+    int i;
+
+    for(i=0;i<A;i++)
+    {
+            listado[i].estado=-1;
+    }
+
+    char opcion;
+
+    do
+    {
+        printf("a. Alta de alumno\no. Ordenar lista de alumnos\nM. Modificar\n.m Mostrar listado\ns. Salir\n");
+        printf("\nIngrese una opcion: ");
+        opcion= getche();
+        switch(opcion)
+        {
+                case 'a':
+                    cargarListadoDeAlumnos(listado,A);
+                    break;
+                case 'o':
+                    ordenarPorNombre(listado,A);
+                    break;
+                case 'm':
+                    mostrarListadoDeAlumnos(listado,A);
+                    break;
+                case 'M':
+                    modificarListadoDeAlumnos(listado,A);
+                    break;
+        }
+
+    }while(opcion!='s');
 
     return 0;
 }

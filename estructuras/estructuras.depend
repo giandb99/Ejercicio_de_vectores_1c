@@ -11,3 +11,15 @@
 
 1537197212 c:\users\alumno\desktop\estructuras\funciones.h
 
+1537283701 source:c:\users\alumno\downloads\ejercicio_de_vectores_1c-master\estructuras\funciones.c
+	"Funciones.h"
+	<stdio.h>
+	<string.h>
+
+1537283754 c:\users\alumno\downloads\ejercicio_de_vectores_1c-master\estructuras\funciones.h
+
+1537284076 source:c:\users\alumno\downloads\ejercicio_de_vectores_1c-master\estructuras\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Funciones.h"
+

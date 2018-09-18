@@ -67,3 +67,28 @@ void ordenarPorNombre(eAlumno listado[],int tam)
         }
     }
 }
+
+void modificarListadoDeAlumnos(eAlumno listado[], int tam)
+{
+    int legajo;
+    int i;
+
+    printf("Ingrese un legajo a bucar: ");
+    scanf("%d",&legajo);
+
+    for(i=0;i<tam;i++)
+    {
+        if(legajo==listado[i].legajo)
+        {
+            //mostrar el alumno
+            //pedir nueva nota
+            //preguntar si esta segur@
+            //si: hago la asignacion
+            //no: aviso que se cancelo la mopdificacion
+        }
+        else
+        {
+
+        }
+    }
+}
